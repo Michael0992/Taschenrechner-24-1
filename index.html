@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="calculator_box">
+        <input class="input_element" id="display_top" type="text" disabled><br>
+        <input class="input_element" id="display_bottom" type="text" disabled><br>
+        <br>
+        <button class="button_element" onclick="toOperation('%')">%</button>
+        <button class="button_element" onclick="last_clear()">CE</button>
+        <button class="button_element" onclick="clear_all()">C</button>
+        <button class="button_element" onclick="toOperation('/')">/</button><br>
+        <button class="button_element" onclick="toOperation('7')">7</button>
+        <button class="button_element" onclick="toOperation('8')">8</button>
+        <button class="button_element" onclick="toOperation('9')">9</button>
+        <button class="button_element" onclick="toOperation('*')">*</button><br>
+        <button class="button_element" onclick="toOperation('4')">4</button>
+        <button class="button_element" onclick="toOperation('5')">5</button>
+        <button class="button_element" onclick="toOperation('6')">6</button>
+        <button class="button_element" onclick="toOperation('-')">-</button><br>
+        <button class="button_element" onclick="toOperation('1')">1</button>
+        <button class="button_element" onclick="toOperation('2')">2</button>
+        <button class="button_element" onclick="toOperation('3')">3</button>
+        <button class="button_element" onclick="toOperation('+')">+</button><br>
+        <button class="button_element" onclick="inverse_operator()">+/-</button>
+        <button class="button_element" onclick="toOperation('0')">0</button>
+        <button class="button_element" onclick="toOperation(',')">,</button>
+        <button class="button_element" onclick="calculate()" style="background-color: orange; color: black;">=</button>
+    </div>
+</body>
+</html>
